@@ -5,7 +5,8 @@
     <parent>
         <artifactId>awesome-bdd</artifactId>
         <groupId>com.holddie</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,7 +14,6 @@
     <properties>
         <cucumber.version>4.3.1</cucumber.version>
         <junit.version>4.11</junit.version>
-        <picocontainer.version>2.15</picocontainer.version>
         <maven.compiler.version>3.3</maven.compiler.version>
     </properties>
 
@@ -26,16 +26,15 @@
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
             <version>${cucumber.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>org.picocontainer</groupId>
             <artifactId>picocontainer</artifactId>

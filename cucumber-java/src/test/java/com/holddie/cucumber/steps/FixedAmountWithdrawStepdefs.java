@@ -1,6 +1,6 @@
-package com.holddie.ddd.steps;
+package com.holddie.cucumber.steps;
 
-import com.holddie.ddd.domain.AccountLog;
+import com.holddie.cucumber.domain.AccountLog;
 import cucumber.api.java.zh_cn.假如;
 import cucumber.api.java.zh_cn.当;
 import cucumber.api.java.zh_cn.而且;
@@ -43,4 +43,6 @@ public class FixedAmountWithdrawStepdefs {
         log.info("我账户的余额应该是{}元\n", finalPrice);
         assertEquals(finalPrice, accountLog.getRemainingBalance().doubleValue(), 0.0);
     }
+
+
 }

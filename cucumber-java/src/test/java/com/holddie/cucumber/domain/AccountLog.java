@@ -1,4 +1,4 @@
-package com.holddie.ddd.domain;
+package com.holddie.cucumber.domain;
 
 import lombok.Data;
 
